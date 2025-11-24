@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-green: #4a6b52;
+  --primary-cream: #f2e1b9;
+  --text-dark: #2d3436;
+  --border-radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fefcf8;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Composants personnalisés */
+.btn-primary {
+  @apply bg-primary-500 hover:bg-primary-600 text-white font-medium px-6 py-3 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl;
+}
+
+.btn-secondary {
+  @apply bg-cream-500 hover:bg-cream-600 text-primary-700 font-medium px-6 py-3 rounded-xl transition-all duration-200 border border-primary-200;
+}
+
+.btn-outline {
+  @apply border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white font-medium px-6 py-3 rounded-xl transition-all duration-200;
+}
+
+.card {
+  @apply bg-white rounded-2xl shadow-lg p-6 border border-gray-100;
+}
+
+.card-hover {
+  @apply card hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer;
+}
+
+.input-field {
+  @apply w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200;
+}
+
+.section-padding {
+  @apply px-4 sm:px-6 lg:px-8 py-12 lg:py-16;
+}
+
+.container-max {
+  @apply max-w-7xl mx-auto;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes bounce-gentle {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-bounce-gentle {
+  animation: bounce-gentle 2s infinite;
+}
+
+/* Styles pour les icônes de services */
+.service-icon {
+  @apply w-16 h-16 mx-auto mb-4 p-3 bg-primary-100 rounded-2xl text-primary-600;
+}
+
+/* Styles pour les étoiles de notation */
+.star-rating {
+  @apply flex items-center space-x-1;
+}
+
+.star {
+  @apply w-4 h-4 text-yellow-400;
+}
+
+/* Styles pour le chatbot */
+.chatbot-container {
+  @apply fixed bottom-6 right-6 z-50;
+}
+
+.chatbot-bubble {
+  @apply bg-primary-500 text-white p-4 rounded-full shadow-lg hover:bg-primary-600 transition-all duration-200 cursor-pointer;
+}
+
+/* Responsive typography */
+.hero-title {
+  @apply text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight;
+}
+
+.section-title {
+  @apply text-3xl sm:text-4xl font-bold text-gray-900 mb-6;
+}
+
+.section-subtitle {
+  @apply text-lg text-gray-600 mb-8 max-w-2xl;
+}
+
+/* Loading states */
+.loading-spinner {
+  @apply animate-spin rounded-full h-8 w-8 border-b-2 border-primary-500;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-green);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3d5742;
+}
+
+/* Form focus states */
+.form-group {
+  @apply mb-4;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-gray-700 mb-2;
+}
+
+.form-error {
+  @apply text-red-500 text-sm mt-1;
+}
