@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  frontend:
+    build: .. # Builds from the parent directory where Dockerfile is located
+    ports:
+      - "8080:80"
+    container_name: manos-expertas
+    restart: unless-stopped

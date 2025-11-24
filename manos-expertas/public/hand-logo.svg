@@ -1,0 +1,6 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g id="hand-logo">
+    <path d="M32 60c-7.732 0-14-6.268-14-14V18a4 4 0 1 1 8 0v18a2 2 0 1 0 4 0V10a4 4 0 1 1 8 0v26a2 2 0 1 0 4 0V22a4 4 0 1 1 8 0v24c0 7.732-6.268 14-14 14z" fill="#4a6b52"/>
+    <circle cx="32" cy="32" r="31" stroke="#4a6b52" stroke-width="2" fill="white"/>
+  </g>
+</svg>
