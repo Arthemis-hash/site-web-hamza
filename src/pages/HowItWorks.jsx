@@ -109,7 +109,7 @@ export const HowItWorks = () => {
       <div className="container-max">
         {/* Hero section */}
         <div className="text-center mb-16">
-          <h1 className="hero-title mb-6">¿Cómo funciona Manos Expertas?</h1>
+          <h1 className="hero-title mb-6">¿Cómo funciona Manos eXpertas?</h1>
           <p className="section-subtitle mx-auto mb-8">
             Un proceso simple y transparente que te conecta con los mejores profesionales 
             para tu hogar en solo unos minutos.
@@ -178,7 +178,7 @@ export const HowItWorks = () => {
 
         {/* Features */}
         <div className="bg-cream-50 rounded-3xl p-8 lg:p-12 mb-16">
-          <h2 className="section-title text-center mb-12">¿Por qué elegir Manos Expertas?</h2>
+          <h2 className="section-title text-center mb-12">¿Por qué elegir Manos eXpertas?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => {
               const Icon = feature.icon;
