@@ -66,7 +66,7 @@ const getIntelligentResponse = (message) => {
   
   // Saludos
   if (lowerMessage.includes('hola') || lowerMessage.includes('buenos') || lowerMessage.includes('buenas')) {
-    return '👋 ¡Hola! Bienvenido a Manos Expertas. Estoy aquí para ayudarte a encontrar el profesional perfecto. ¿Qué necesitas hoy?';
+    return '👋 ¡Hola! Bienvenido a Manos Xpertas. Estoy aquí para ayudarte a encontrar el profesional perfecto. ¿Qué necesitas hoy?';
   }
   
   if (lowerMessage.includes('gracias') || lowerMessage.includes('thank')) {
@@ -83,7 +83,7 @@ const getIntelligentResponse = (message) => {
   }
   
   // Respuesta por defecto
-  return '👋 Gracias por tu mensaje. Soy tu asistente virtual de Manos Expertas. Te ayudo a encontrar profesionales verificados para:\n\n⚡ Electricidad\n💧 Fontanería\n🎨 Pintura\n🧹 Limpieza\n📦 Mudanzas\n🔨 Carpintería\n\n¿Qué servicio necesitas hoy?';
+  return '👋 Gracias por tu mensaje. Soy tu asistente virtual de Manos Xpertas. Te ayudo a encontrar profesionales verificados para:\n\n⚡ Electricidad\n💧 Fontanería\n🎨 Pintura\n🧹 Limpieza\n📦 Mudanzas\n🔨 Carpintería\n\n¿Qué servicio necesitas hoy?';
 };
 
 export const ChatbotSection = () => {

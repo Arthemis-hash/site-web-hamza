@@ -38,7 +38,7 @@ export const Header = () => {
                 </div>
               </div>
               <span className="text-base md:text-xl font-bold text-gray-900 hidden sm:inline">
-                MANOS EXPERTAS
+                MANOS XPERTAS
               </span>
               <span className="text-base md:text-xl font-bold text-gray-900 sm:hidden">
                 ME
