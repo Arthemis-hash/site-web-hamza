@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Fond circulaire -->
+  <circle cx="100" cy="100" r="95" fill="#4F46E5"/>
+  <circle cx="100" cy="100" r="90" fill="#6366F1"/>
+  
+  <!-- Main stylisée -->
+  <g transform="translate(50, 50)">
+    <!-- Paume -->
+    <path d="M 40 80 Q 35 70, 35 60 L 35 40 Q 35 30, 42 27 Q 48 24, 52 30 L 52 35 Q 52 25, 58 22 Q 64 19, 68 25 L 68 30 Q 68 20, 74 17 Q 80 14, 84 20 L 84 35 Q 84 25, 90 22 Q 96 19, 100 25 L 100 50 Q 100 60, 95 70 L 90 85 Q 85 95, 75 95 L 55 95 Q 45 95, 40 85 Z" 
+          fill="white" stroke="white" stroke-width="2"/>
+    
+    <!-- Doigts -->
+    <rect x="45" y="15" width="8" height="25" rx="4" fill="white"/>
+    <rect x="57" y="8" width="8" height="30" rx="4" fill="white"/>
+    <rect x="69" y="10" width="8" height="28" rx="4" fill="white"/>
+    <rect x="81" y="15" width="8" height="25" rx="4" fill="white"/>
+    
+    <!-- Détails de la paume -->
+    <path d="M 50 65 Q 60 68, 70 65" stroke="#E0E7FF" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M 52 72 Q 62 75, 72 72" stroke="#E0E7FF" stroke-width="2" fill="none" opacity="0.5"/>
+  </g>
+  
+  <!-- Étoiles d'expertise -->
+  <circle cx="40" cy="40" r="5" fill="#FCD34D" opacity="0.8"/>
+  <circle cx="160" cy="40" r="5" fill="#FCD34D" opacity="0.8"/>
+  <circle cx="160" cy="160" r="5" fill="#FCD34D" opacity="0.8"/>
+</svg>

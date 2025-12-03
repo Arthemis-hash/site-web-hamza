@@ -1,52 +1,46 @@
-# ============================================
-# Manos Expertas - Configuration Example
-# ============================================
-# Copiez ce fichier vers .env et remplissez avec vos vraies valeurs
-
-# ============ API Configuration ============
+# API Configuration
 VITE_CHATBOT_API_URL=https://ai.jobsacademie.tech/api/chat
 VITE_API_BASE_URL=your_api_base_url_here
 
-# ============ Gemma/Ollama API ============
+# Gemma/Ollama API Configuration
 VITE_OLLAMA_MODEL=gemma:2b
 VITE_OLLAMA_MAX_TOKENS=500
 VITE_OLLAMA_RATE_LIMIT=10
 VITE_OLLAMA_TIMEOUT=30000
 
-# ============ Location (OpenStreetMap) ============
+# Location Configuration (OpenStreetMap)
 VITE_DEFAULT_LOCATION_NAME=Jaén, España
 VITE_DEFAULT_LATITUDE=37.7796
 VITE_DEFAULT_LONGITUDE=-3.7849
 VITE_DEFAULT_ZOOM=13
 
-# ============ Social Media ============
+# Social Media Links
 VITE_LINKEDIN_URL=https://www.linkedin.com/company/your-company
 VITE_INSTAGRAM_URL=https://www.instagram.com/your-company
 VITE_WHATSAPP_BUSINESS=+34900123456
 
-# ============ Contact Information ============
+# Contact Information
 VITE_CONTACT_EMAIL=info@manosexpertas.es
 VITE_CONTACT_PHONE=+34900123456
 VITE_CONTACT_ADDRESS=Jaén, España
 
-# ============ YouTube API ============
-# Obtenez votre clé API depuis: https://console.cloud.google.com/apis/credentials
-VITE_YOUTUBE_API_KEY=your_youtube_api_key_here
-VITE_YOUTUBE_CHANNEL_ID=your_youtube_channel_id_here
+# ============ YOUTUBE API ============
+# Remplacez ces valeurs par vos vraies clés YouTube API
+VITE_YOUTUBE_API_KEY=AIzaSyB2i_9a0GcFnho1d_m3TE7-mV4wN5pPfZI
+VITE_YOUTUBE_CHANNEL_ID=UC8butISFwT-Wl7EV0hUK0BQ
 
-# ============ App Configuration ============
+# App Configuration
 VITE_APP_NAME=Manos Expertas
 VITE_APP_URL=https://manosexpertas.es
 
 # ============ EMAIL (SMTP) ============
-# Configuration pour l'envoi d'emails via le formulaire de contact
 SMTP_HOST=smtp.gmail.com
 SMTP_PORT=587
 SMTP_SECURE=false
-SMTP_USER=your_email@gmail.com
-SMTP_PASSWORD=your_app_password_here
+SMTP_USER=sami73232@gmail.com
+SMTP_PASSWORD=tdnszsggklffhkwq
 SMTP_FROM_NAME=Manos Expertas
-SMTP_FROM_EMAIL=your_email@gmail.com
+SMTP_FROM_EMAIL=sami73232@gmail.com
 
 # Email de destination par défaut pour les formulaires de contact
 VITE_DEFAULT_CONTACT_EMAIL=sami73232@gmail.com

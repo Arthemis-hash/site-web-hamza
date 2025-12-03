@@ -57,6 +57,8 @@ export const AuthProvider = ({ children }) => {
         email: credentials.email,
         name: credentials.name || 'Usuario',
         avatar: '/api/placeholder/50/50',
+        // Type d'utilisateur: 'client' ou 'professional'
+        userType: credentials.userType || 'client',
       };
       localStorage.setItem('user', JSON.stringify(user));
       dispatch({ type: 'LOGIN', payload: user });
@@ -75,6 +77,8 @@ export const AuthProvider = ({ children }) => {
         id: Date.now(),
         ...userData,
         avatar: '/api/placeholder/50/50',
+        // Type d'utilisateur: 'client' ou 'professional'
+        userType: userData.userType || 'client',
       };
       localStorage.setItem('user', JSON.stringify(user));
       dispatch({ type: 'LOGIN', payload: user });
